@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Muli",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+
+
+}
+
+
+#panel-1{
+    background-image: url(https://img.static-af.com/images/meta/IDname/CITY-BCN-1?aspect_ratio=2:1&max_width=1920);
+}
+#panel-2{
+    background-image: url(https://media-exp1.licdn.com/dms/image/C511BAQHM4mtKZ1RrdA/company-background_10000/0/1519798016830?e=2159024400&v=beta&t=mg1L7tpTsYv17HZ-uDcZiOveoGDfZzVOa1puPJfEDV0);
+}
+#panel-3{
+    background-image: url(https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWmSrD2CyP4P2lEz7GY7ElM-0o_UdcD3zJfkAv8FPz9GxMuId2eOWR2EU5LTiE-46E42jSi5HgAz8vjNSX47um9rsW3u.jpg?r=5c5);
+}
+#panel-4{
+    background-image: url(https://www.thehindu.com/sport/football/yu5moo/article34575832.ece/ALTERNATES/LANDSCAPE_1200/barcelona-womens-champions-league);
+}
+#panel-5{
+    background-image: url(https://i2.wp.com/thenewspocket.com/wp-content/uploads/2021/06/Young-Barcelona.jpg?resize=1000%2C600&ssl=1);
+}
+#panel-6{
+    background-image: url(https://e0.365dm.com/21/12/2048x1152/skysports-barcelona-la-liga_5619739.jpg);
+}
+
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin:0;
+    opacity:0;
+} 
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    #panel-4,#panel-5{
+        display: none;
+    }
+}
