@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>majority</title>
+    <script>
+        function major(arr,n)
+                {
+                    let freq=Math.floor(n/2)
+                    let store={}//object
+
+            for(let i=0;i<n;i++){
+                if(store[arr[i]]!==undefined)
+                store[arr[i]]++;
+                else
+                store[arr[i]]=1;
+                if(store[arr[i]]>reqfreq){
+                    console.log(store)
+                    return arr[i]
+                }
+            }
+  
+                }
+                let arr=[2,1,2]
+
+                major(arr, arr.length)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
