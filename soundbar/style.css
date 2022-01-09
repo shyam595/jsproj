@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+#messi{
+    background-image: url("https://www.fcbarcelona.com/fcbarcelona/photo/2019/01/21/7bd839a0-9377-4102-847d-cfe0700373e6/49-FCB-Bayern-Messi-1-Optimized.JPG");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#got{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AUqy6bqMTx9zeEJKv-FWhPE-heTTN7210Q&usqp=CAU");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#starks{
+    background-image: url("https://w0.peakpx.com/wallpaper/891/517/HD-wallpaper-stark-family-arya-stark-bran-stark-game-of-thrones-jon-snow-ned-stark-rob-snow-samezio007-sansa-stark.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#narcos{
+    background-image: url("https://i.ytimg.com/vi/iiuW754iw7o/maxresdefault.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+
+#kabali{
+    background-image: url("https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2016/06/30/Photos/Processed/kabali1-kOQF--621x414@LiveMint.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#moneyheist{
+    background-image: url("https://images.hindustantimes.com/img/2021/09/03/1600x900/6c26ab72-0c82-11ec-bef6-cf3476bb3c4f_1630663337995.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#ironman{
+    background-image: url("https://www.bollywoodhungama.com/wp-content/uploads/2020/04/Marvel-Studios-releases-Avengers-Endgame-easter-egg-related-to-Iron-Man-and-it-will-make-you-emotional-.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+#ucl{
+    background-image: url("https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_600,h_338/https://worldsoccertalk.com/wp-content/uploads/2016/04/champions-league-600x338.jpg");
+    background-size: cover;
+            width: 150px;
+            height: 100px;
+            font-size: 2rem;
+}
+
+body{
+    background-image: linear-gradient(90deg,#eca1a6,#ada397);
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    
+}
+
+#buttons{
+    text-align: center;
+     display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 150px;
+
+}
+
+.btn{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
