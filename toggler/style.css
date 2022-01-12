@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+.toggle-container{
+    align-items: center;
+    display: flex;
+    width: 200px;
+    margin: 10px 0;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.ball{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: 3px;
+    left: 3px;
+    }
+.label{
+    background-color: #d0d0d0;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    margin: 0 15px;
+}
+.toggle{
+    visibility: hidden;
+}
+.ball:hover{
+    cursor: pointer;
+}
+.toggle:checked+.label{
+    background-color: #8e44ad;;
+}
+.toggle:checked +.label .ball{
+    animation: slideOn 0.3s linear forwards;
+}
+@keyframes slideOn{
+    0%{
+        transform: translateX(0) scale(1);
+    }
+    50%{
+        transform: translateX(20px) scale(1.2);
+    }
+    100%{
+        transform: translateX(40px) scale(1);
+    }
+}
