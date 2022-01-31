@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(243, 208, 12, 0.123);
+    /* background-image: linear-gradient(315deg,#b8c6db 0%, #f5f7fa 100%); */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    width: 600px;
+    overflow: hidden;
+}
+
+.quiz-header{
+    padding: 4rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #732d91;
+}
+
+label::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    left: 7px;
+    top: calc(50% - 13px);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.touch{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    left: -3px;
+    top: 2px;
+    border: 5px solid #fff;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked~ .touch{
+    position: relative;
+    opacity: 1;
+    animation: explode 0.35s;
+}
+.line{
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.line.zero{
+    left: 11px;
+    top: -21px;
+    transform: translateY(20px);
+    width: 2px;
+    height: 10px;
+}
+.line.one{
+    right: -7px;
+    top: -11px;
+    transform: rotate(-55deg) translate(-9px);
+}
+
+.line.two{
+    right: -20px;
+    top: 11px;
+    transform: translate(-9px);
+
+}
+.line.three{
+    right: -8px;
+    top: 35px;
+    transform: rotate(55deg) translate(-9px);
+
+}
+.line.four{
+    left: -8px;
+    top: -11px;
+    transform: rotate(55deg) translate(9px);
+
+}
+
+.line.five{
+    left: -20px;
+    top: 11px;
+    transform: translate(9px);
+}
+.line.six{
+    left: -8px;
+    top: 35px;
+    transform: rotate(-55deg) translate(9px);
+}
+.line.seven{
+    left: 11px;
+    bottom: -21px;
+    transform: translateY(-20px);
+    width: 2px;
+    height: 10px;
+}
+
+@keyframes explode {
+    0%{
+        opacity:0;
+        transform: scale(10);
+    }
+    60%{
+        opacity:1;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+    
+}
+
+input[type="radio"]:checked~ .touch .line.zero {
+    animation: drop-zero 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.one {
+    animation: drop-one 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.two {
+    animation: drop-two 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.three {
+    animation: drop-three 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.four {
+    animation: drop-four 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.five {
+    animation: drop-five 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .touch .line.six {
+    animation: drop-six 0.9s forwards o.1s;
+}
+input[type="radio"]:checked~ .bullet .line.seven {
+    animation: drop-seven 0.9s forwards o.1s;
+}
+
+@keyframes drop-zero {
+    0%{
+        opacity: 0 ;
+        transform: translateY(20px);
+        height: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-2px) ;
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-one {
+    0%{
+        opacity: 0;
+        transform:rotate(-55deg) translate(-20px) ;
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-55deg) translate(9px) ;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-two {
+    0%{
+        opacity: 0;
+        transform:translate(-20px) ;
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(9px);
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-three{
+    0%{
+        opacity: 0;
+        transform:rotate(55deg) translate(-20px) ;
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform:rotate(55deg) translate(9px);
+        width :0px ;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-four {
+    0%{
+        opacity: 0;
+        transform: rotate(55deg) translate(20px) ;
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform:rotate(55deg) translate(20px) ;
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-five {
+    0%{
+        opacity: 0;
+        transform:translate(20px) ;
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform:translate(-9px) ;
+        width:0 ;
+        opacity: 0 ;
+    }
+}
+
+@keyframes drop-six {
+    0%{
+        opacity: 0;
+        transform: rotate(-55deg) translate(20px);
+        width: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-55deg) translate(-9px);
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes drop-seven {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+        height: 10px;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(2px);
+        height: 0px;
+        opacity: 0;
+    }
+}
