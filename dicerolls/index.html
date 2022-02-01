@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dice roll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dice Rolls Game</h1>
+
+    <label for="gridSize">Grid Size</label>
+    <input type="number" name="gridSize" id="gridSize">
+    <br>
+    <br>
+    <label for="playerCount">Number of Players</label>
+    <input type="number" name="playerCount" id="playerCount">
+    <br>
+    <br>
+    <input type="button" value="Start Game" id="submit">
+    <br>
+    <br>
+    <table id="card">
+        <thead>
+            <tr>
+                <th>Player ID</th>
+                <th>Dice Roll</th>
+                <th>Dice Roll History</th>
+                <th>Path (Position History)</th>
+                <th>Winner Status</th>
+            </tr>
+        </thead>
+        <tbody id="card-body">
+            
+        </tbody>
+    </table>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
