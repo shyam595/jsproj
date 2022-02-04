@@ -158,7 +158,6 @@ function winnerIs(x,y){
 }
 
 
-
 function reset(){
     select.style.display = 'none'
     setTimeout(()=>{
