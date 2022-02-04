@@ -23,7 +23,7 @@ function gameBegins(){
     const boards = document.getElementById("boards")
     const select = document.getElementById("select")
 
-    gameActive=true
+    
 
     
 
@@ -165,7 +165,17 @@ function reset(){
         boards.style.display = 'none'
         start.style.display = 'block'
         message.innerHTML = 'choose Rock, Paper or Scissors'
-        message.style.display = 'black'
+        message.style.color = 'black'
+        playerScore = 0
+        computerScore = 0
+        pScore.innerHTML = ''
+        cScore.innerHTML = ''
+
+        playSelect.innerHTML = ''
+        comSelect.innerHTML = ''
+        
+        playSelect.style.color = 'black'
+        comSelect.style.color = 'black'
     },3000)
     
 }
