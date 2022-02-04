@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="text-center mt-3">
+        <h1>
+           <i>WELCOME TO ROCK PAPER SCISSORS GAME
+        </i>         </h1>
+    </div>
+    <div id="message">
+
+    </div>
+    <div class="start" id="start">
+        <input type="submit" id="submit" class="btn" value="Get Started" onclick="gameBegins()">
+    </div>
+
+    <div class="boards" id="boards">
+        
+            <div>
+                <h1>Player</h1>
+                <div id="playerSide">
+                    <h3 id="playerScore"></h3>
+                    <div id="playerSelect"></div>
+                </div>
+            </div>
+            <div>
+                <h1>Computer</h1>
+                <div id="computerSide">
+                    <h3 id="computerScore"></h3>
+                    <div id="computerSelect"></div>
+                </div>
+            </div>
+        
+    </div>
+
+    <div id="select" class="select">
+        
+            <div id="rock" onclick="thisIsRock('rock')">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+            <div id="paper" onclick="thisIsPaper('paper')">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+            <div id="scissors" onclick="thisIsScissors('scissors')">
+                <i class="fas fa-hand-scissors"></i>
+            </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

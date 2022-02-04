@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:ital,wght@0,400;1,800&family=Quintessential&family=Ubuntu&display=swap');
+html, body{
+    height: 100%
+}
+
+body{
+    background-color: azure;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Quintessential";
+}
+
+h1{
+    color: black
+
+}
+#message{
+    font-family: "Playfair Display";
+    font-size: larger;
+}
+
+.btn{
+    padding: 10px 15px;
+    font-size: large;
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 5px;
+    color: seashell;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: antiquewhite;
+    color: black;
+    border:none;
+}
+
+.fa-hand-rock, .fa-hand-paper, .fa-hand-scissors{
+    font-size: 4rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.boards{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.boards>div{
+    width: 50%;
+}
+
+.select{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#rock, #paper, #scissors{
+    margin: 5%;
+
+}
+
+
+
+
+#playerSide, #computerSide{
+    height: 250px;
+}
