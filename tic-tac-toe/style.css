@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:ital,wght@0,400;1,800&family=Quintessential&family=Supermercado+One&family=Ubuntu&display=swap');
+
+
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(182, 174, 165);
+    overflow: hidden;
+}
+.container{
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+.header{
+    font-family: "Supermercado One";
+    font-size: 50px;
+}
+.details{
+    padding: 10px;
+    font-family: "Ubuntu";
+}
+
+#player1,#player2{
+    padding: 5px;
+    margin: 10px 0 10px 0;
+}
+
+#submit{
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto";
+}
+
+#submit:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 0.5px solid goldenrod;
+}
+
+.game{
+    display: none;
+    flex-wrap: wrap;
+    width: 303px;
+    height: 303px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.game-slot{
+    width: 99px;
+    height: 99px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    font-family: "Quintessential";
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.message{
+    font-size: 20px;
+    font-family: "Ubuntu";
+    color: aliceblue;
+}
