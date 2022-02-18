@@ -3,6 +3,14 @@ const random_quote_API = 'https://type.fit/api/quotes'
 const quoteDisplay = document.getElementById("quoteDisplay")
 const quoteInput = document.getElementById("quoteInput")
 const timer = document.getElementById("timer")
+const start = document.getElementById("start")
+
+start.addEventListener("click", ()=>{
+    document.querySelector(".home").style.display = 'none'
+    timer.style.display = 'flex'
+    document.querySelector(".container").style.display = 'block'
+    getNextQuote()
+})
 
 quoteInput.addEventListener('input', ()=>{
     const arrOfQuote = quoteDisplay.querySelectorAll("span")
@@ -61,4 +69,3 @@ function getTimerTime(){
     return Math.floor((new Date() - startTime )/1000)
 }
 
-getNextQuote()
