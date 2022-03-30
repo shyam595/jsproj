@@ -62,12 +62,13 @@ submit.addEventListener("click", ()=>{
     
     
     console.log(city)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=$Berlin&appid=${apikey}`).then((res) => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=${apikey}`).then((res) => {
         return res.json()
     }).then((x)=>{
         if(x.cod='404'){
             alert(x.message)
         }else{
+            console.log(city)
         const {lon, lat} = x.coord
         report(lat, lon)
         
