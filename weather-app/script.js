@@ -55,14 +55,14 @@ function report(latitude, longitude){
 
 
 submit.addEventListener("click", ()=>{
-    // let apikey = "22cfe9cd002da5a28867d9b6a3df0cf0"
+    let apikey = "22cfe9cd002da5a28867d9b6a3df0cf0"
     let city = search.value
     let first = city.split('')[0].toUpperCase()
     city=city.replace(city.charAt(0), first)
     
     
     console.log(city)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=`${city}`&appid=22cfe9cd002da5a28867d9b6a3df0cf0`).then((res) => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`).then((res) => {
         return res.json()
     }).then((x)=>{
         if(x.cod='404'){
