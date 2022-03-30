@@ -68,8 +68,9 @@ submit.addEventListener("click", ()=>{
         if(x.cod='404'){
             alert(x.message)
         }else{
-            console.log(city)
+        
         const {lon, lat} = x.coord
+        console.log(lon)
         report(lat, lon)
         
         }
