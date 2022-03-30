@@ -65,16 +65,19 @@ submit.addEventListener("click", ()=>{
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=22cfe9cd002da5a28867d9b6a3df0cf0`).then((res) => {
         return res.json()
     }).then((x)=>{
-        if(x.cod='404'){
-            console.log(x)
-            alert(x.message)
-        }else{
+//         if(x.cod='404'){
+//             console.log(x)
+//             alert(x.message)
+//         }else{
         
+//         const {lon, lat} = x.coord
+//         console.log(lon)
+//         report(lat, lon)
+        
+//         }
         const {lon, lat} = x.coord
         console.log(lon)
         report(lat, lon)
-        
-        }
         search.value = ''
     })
 })
