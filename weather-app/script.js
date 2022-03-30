@@ -66,6 +66,7 @@ submit.addEventListener("click", ()=>{
         return res.json()
     }).then((x)=>{
         if(x.cod='404'){
+            console.log(x)
             alert(x.message)
         }else{
         
